@@ -1,3 +1,148 @@
+/* GENERAL */
+
 body{
-    background-color: black;
+    margin: 0;
+    padding: 0;
 }
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-family: 'Aclonica', sans-serif;
+    font-size: 72pt;
+    margin-top: -0.1em;
+    margin-bottom: -0.1em;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* MAIN NAVBAR */
+
+#mainnav{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#mainnav a{
+    color: white;
+    transition: 0.3s;
+    padding: 2em 4.9em;
+}
+
+#mainnav a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+/* SECONDARY NAVBAR */
+
+#secondnav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#secondnav a{
+    padding: 15px;
+    padding: 1em 6em;
+    transition: 0.3s;
+}
+
+#secondnav a:hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+/* HEADER */
+
+.heroimg{
+    width: 100%;
+}
+
+/* REASSURANCE */
+
+#reassurance{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em 5em;
+}
+
+#reassurance .reaitem{
+    text-align: center;
+}
+
+#reassurance .reaicon{
+    width: 50px;
+    height: auto;
+}
+
+/* MAIN */
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "arealeft arearight";
+}
+
+.arealeft{
+    grid-area: arealeft;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.arearight{
+    grid-area: arearight;
+}
+
+    /* Searchbar */
+    .searchbar{
+        padding-left: 10em;
+    }
+
+    .searchbar input{
+        padding: 0.5em 1em;
+        border: none;
+        border-bottom: 1px solid gray;
+        transition: 0.3s;
+    }
+
+    .searchbar input:focus{
+        border: none;
+        border-bottom: 1px solid black;
+        outline: -webkit-focus-ring-color auto 0px;
+        transition: 0.3s;
+    }
+
+    .searchbar button{
+        padding: 0.5em 1em;
+        border: 1px solid white;
+        background-color: black;
+        color: white;
+        transition: 0.3s;
+    }
+
+    .searchbar button:hover{
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        transition: 0.3s;
+    }
+
+
+    #asidephoto{
+        width: 100%;
+        margin-bottom: 0;
+    }
